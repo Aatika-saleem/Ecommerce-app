@@ -16,17 +16,10 @@ npm install
 ## 2. Set up Supabase
 
 1. Go to https://supabase.com → create a new project.
-2. In your project: **SQL Editor → New Query** → paste the entire contents of
-   `supabase-schema.sql` (included in this repo) → click **Run**.
-   This creates the `products` and `orders` tables, turns on Row Level
-   Security, and adds the policies described below, plus 3 sample products.
-3. Go to **Project Settings → API**. Copy the **Project URL** and the
+2. Go to **Project Settings → API**. Copy the **Project URL** and the
    **anon public** key.
-4. In this project, duplicate `.env.example` as a new file named `.env`:
+3. In this project createe`.env`:
 
-```bash
-cp .env.example .env
-```
 
    Then open `.env` and paste in your values:
 
@@ -38,7 +31,7 @@ VITE_SUPABASE_ANON_KEY=eyJhbGciOi...
    **This is the only file you need to edit to connect your own Supabase project.**
    `.env` is already in `.gitignore`, so your key never gets committed.
 
-5. (Recommended) In **Authentication → Providers → Email**, you can turn OFF
+4. (Recommended) In **Authentication → Providers → Email**, you can turn OFF
    "Confirm email" while testing, so signup logs the user in immediately
    instead of requiring an email click.
 
