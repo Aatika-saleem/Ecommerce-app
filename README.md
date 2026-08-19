@@ -96,6 +96,5 @@ src/
     Home.jsx               fetches & lists products
     UserPortal.jsx          login/signup + shows AddProductForm when logged in
     Cart.jsx                quantities, total, Place Order -> inserts into `orders`
-supabase-schema.sql      <- run once in Supabase SQL editor
 .env.example             <- copy to .env and fill in your keys
 ```
