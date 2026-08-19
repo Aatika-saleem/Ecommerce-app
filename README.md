@@ -61,7 +61,7 @@ Visit the printed localhost URL.
 - `select` / `insert`: a user can only see/create orders where `user_id`
   matches their own `auth.uid()` — one user can never see another's orders.
 
-## 5. Deploy (Vercel or Netlify)
+## 5. Deploy (Vercel)
 
 Push this project to a GitHub repo, then:
 
@@ -72,14 +72,7 @@ Push this project to a GitHub repo, then:
    `VITE_SUPABASE_ANON_KEY` with the same values from your `.env`.
 4. Deploy.
 
-**Netlify**
-1. Import the repo at app.netlify.com.
-2. Build command: `npm run build`, publish directory: `dist`.
-3. Under **Site settings → Environment variables**, add the same two
-   `VITE_SUPABASE_*` variables.
-4. Deploy.
-
-Submit your GitHub repo link and the live Vercel/Netlify URL.
+Submit your GitHub repo link and the live Vercel URL.
 
 ## Project structure
 
@@ -96,5 +89,5 @@ src/
     Home.jsx               fetches & lists products
     UserPortal.jsx          login/signup + shows AddProductForm when logged in
     Cart.jsx                quantities, total, Place Order -> inserts into `orders`
-.env.example             <- copy to .env and fill in your keys
+.env             <- fill in your keys
 ```
